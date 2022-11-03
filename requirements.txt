@@ -22,3 +22,4 @@ pytorch-lightning @ git+https://github.com/PyTorchLightning/pytorch-lightning@9b
 torchaudio==0.13.0
 psutil
 pillow==9.0
+sentencepiece==0.1.97

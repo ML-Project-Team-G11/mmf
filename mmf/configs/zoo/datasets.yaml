@@ -551,7 +551,6 @@ localized_narratives:
         - url: https://storage.googleapis.com/localized-narratives/annotations/open_images_test_localized_narratives.jsonl
           file_name: open_images_test_localized_narratives.jsonl
           compressed: false
-<<<<<<< HEAD
   only_captions:
     version: 1.0_2021_04_01
     resources:
@@ -617,5 +616,3 @@ charades:
       file_name: Charades.zip
     - url: https://ai2-public-datasets.s3-us-west-2.amazonaws.com/charades/Charades_v1_480.zip
       file_name: Charades_v1_480.zip
-=======
->>>>>>> e91d1761 (unable default feature download for HM)

@@ -235,7 +235,7 @@ class FeatureExtractor:
         # Image dimensions should be divisible by 32, to allow convolutions
         # in detector to work
         current_img_list = to_image_list(img_tensor, size_divisible=32)
-        current_img_list = current_img_list.to("cuda")
+        current_img_list = current_img_list.to("mps") if torch.backends.mps.is_available() else current_img_list.to("cuda")
 
         with torch.no_grad():
             output = self.detection_model(current_img_list)

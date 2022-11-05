@@ -128,7 +128,7 @@ class FeatureExtractor:
 
         load_state_dict(model, checkpoint.pop("model"))
 
-        model.to("cuda")
+        model.to("mps") if torch.backends.mps.is_available() else model.to("cuda")
         model.eval()
         return model
 
